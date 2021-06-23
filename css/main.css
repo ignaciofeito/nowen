@@ -1,15 +1,19 @@
 /* Estilo general */
-p,h1,h2,h3,a,address {
+
+p, h1, h2, h3, a, address {
     color: #fff;
 }
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */    
+    font-size: 62.5%;
+    /* 1 rem = 10px */
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 1.6rem;
 }
@@ -18,10 +22,10 @@ body {
     font-family: 'Myriad Pro Regular';
     src: url(../fuente/MyriadProRegular.ttf);
 }
-body {
-font-family: 'Myriad Pro Regular';
-}
 
+body {
+    font-family: 'Myriad Pro Regular';
+}
 
 /* Introducción */
 
@@ -46,6 +50,7 @@ font-family: 'Myriad Pro Regular';
     color: #000;
     font-style: italic;
 }
+
 @media (min-width: 768px) {
     .intro {
         display: grid;
@@ -53,40 +58,55 @@ font-family: 'Myriad Pro Regular';
         grid-template-rows: auto 1fr 1fr;
         gap: 2rem;
     }
-
     .intro__titulo {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
     }
-
     .intro__img--cuadro {
         grid-column: 1 / 2;
         grid-row: 2 / 4;
         max-height: 50rem;
         object-fit: cover;
     }
-
     .intro__img--logo {
         grid-column: 2 / 4;
         grid-row: 2 / 3;
     }
-
     .intro__texto {
         grid-column: 2 / 4;
-        grid-row: ;
     }
 }
 
+.container-galeria {
+    background-image: url('../galeria/imgmockup.png');
+    background-size: cover;
+}
+
+.container-galeria_logo {
+    width: 75%;
+}
+
+.container-galeria_cuadro {
+    width: 60%;
+    border: 10px solid #121212;
+    box-shadow: 5px 10px 50px;
+    margin-bottom: 25%;
+}
+
+.container-galeria_txt {
+    margin-left: 10%;
+}
 
 /* Footer */
 
 .footer {
     display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
 }
+
 @media (min-width: 768px) {
     .footer {
         flex-flow: row nowrap;
@@ -94,17 +114,19 @@ font-family: 'Myriad Pro Regular';
 }
 
 /* Sección de Info del Footer */
+
 .footer__info {
     display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 100%;
     padding: 2rem;
     text-align: center;
     border-bottom: 3px solid #ccc;
 }
+
 @media (min-width: 768px) {
     .footer__info {
         flex-flow: row nowrap;
@@ -115,9 +137,11 @@ font-family: 'Myriad Pro Regular';
 }
 
 /* Contacto y Menú de Nav. del Footer */
+
 .footer__contacto, .footer__nav {
     width: 100%;
 }
+
 @media (min-width: 768px) {
     .footer__contacto, .footer__nav {
         width: 45%;
@@ -125,14 +149,16 @@ font-family: 'Myriad Pro Regular';
 }
 
 /* Redes sociales del footer */
+
 .footer__social {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding: 2rem;
     width: 100%;
 }
+
 @media (min-width: 768px) {
     .footer__social {
         width: 30%;
