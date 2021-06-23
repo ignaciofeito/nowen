@@ -77,6 +77,8 @@ body {
     }
 }
 
+/*Galería*/
+
 .container-galeria {
     background-image: url('../galeria/imgmockup.png');
     background-size: cover;
