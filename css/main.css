@@ -1,3 +1,12 @@
+/* Paleta de colores */
+:root {
+    --primario: #5D5C5C;
+    --secundario: #707070;
+    --footer: #D8D8D8;
+    --texto: #fff;
+}
+
+
 /* Estilo general */
 
 p, h1, h2, h3, a, address {
@@ -27,6 +36,24 @@ body {
     font-family: 'Myriad Pro Regular';
 }
 
+/* Navbar */
+
+.navbar {
+    background-color: #000 !important;
+}
+
+.nav-link {
+    color: var(--secundario) !important;
+}
+@media (min-width: 768px) {
+    .nav-link {
+        border-right: 2.5px solid var(--secundario);
+    }
+    .nav-link--sinborde {
+        border-right: none;
+    }
+}
+
 /* Introducción */
 
 .intro {
@@ -36,10 +63,11 @@ body {
 
 .intro__titulo {
     margin: 3rem 0;
-    color: #000;
+    color: var(--primario);
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 4rem;
 }
 
 .intro__img {
@@ -47,7 +75,7 @@ body {
 }
 
 .intro__texto {
-    color: #000;
+    color: var(--secundario);
     font-style: italic;
 }
 
@@ -61,6 +89,7 @@ body {
     .intro__titulo {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
+        font-size: 6rem;
     }
     .intro__img--cuadro {
         grid-column: 1 / 2;
@@ -76,6 +105,75 @@ body {
         grid-column: 2 / 4;
     }
 }
+
+/* Presentación */
+
+.presentacion {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primario);
+}
+
+.presentacion__titulo,.presentacion__texto {
+    text-align: center;
+}
+
+.presentacion__titulo {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.pictogramas {
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.pictograma {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.pictograma p {
+    text-align: center;
+    font-style: italic;
+}
+@media (min-width: 768px) {
+    .pictograma {
+        width: 30%;
+    }
+    .pictograma img {
+        width: 15rem;
+    }
+    .pictograma p {
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .pictogramas {
+        justify-content: center;
+    }
+    
+    .presentacion__texto {
+        font-size: 2rem;
+    }
+    .pictograma {
+        width: 28%;
+    }
+    .pictograma img {
+        /* width: 20rem; */
+    }
+    .pictograma p {
+        font-size: 1.5rem;
+    }
+}
+
 
 /*Galería*/
 
