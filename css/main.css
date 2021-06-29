@@ -197,74 +197,79 @@ body {
     margin-left: 10%;
 }
 
+
+/* Videos */
+
+.carousel-videos {
+    width: 100%;
+    padding: 1rem;
+}
+
+.carousel__video {
+    width: 100%;
+    height: 50rem;
+}
+
+
 /* Footer */
 
 .footer {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
+    padding: 2rem;
     align-items: center;
-    background-color: #000;
+    background-color: var(--footer);
 }
 
+.footer__contacto {
+    width: min(90%, 40rem);
+    margin: 0 auto;
+}
+
+.footer__img {
+    width: 100%;
+}
+
+/* Footer Información de contacto */
+
+.footer__contacto .fab,.footer__contacto .far {
+    transform: translateY(0.4rem);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
 @media (min-width: 768px) {
-    .footer {
-        flex-flow: row nowrap;
+    .footer__contacto .fab,.footer__contacto .far {
+        transform: translateY(1rem);
+        font-size: 4rem;
     }
 }
-
-/* Sección de Info del Footer */
 
 .footer__info {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-    padding: 2rem;
+    color: #000;
     text-align: center;
-    border-bottom: 3px solid #ccc;
 }
-
 @media (min-width: 768px) {
     .footer__info {
-        flex-flow: row nowrap;
-        width: 60%;
-        border-bottom: none;
-        border-right: 3px solid #ccc;
+        text-align: left;
     }
 }
 
-/* Contacto y Menú de Nav. del Footer */
 
-.footer__contacto, .footer__nav {
+/* Footer sección del Mapa */
+
+.footer__mapa {
+    width: min(90%, 60rem);
+    margin: 0 auto;
+}
+
+.footer__iframe {
     width: 100%;
+    height: 30rem;
 }
-
 @media (min-width: 768px) {
-    .footer__contacto, .footer__nav {
-        width: 45%;
+    .footer__iframe {
+        height: 40rem;
     }
-}
-
-/* Redes sociales del footer */
-
-.footer__social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .footer__social {
-        width: 30%;
-    }
-}
-
-.footer__social .footer__soc-enlaces {
-    font-size: 2.5rem;
 }
