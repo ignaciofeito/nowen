@@ -180,6 +180,8 @@ body {
 .container-galeria {
     background-image: url('../galeria/imgmockup.png');
     background-size: cover;
+    background-repeat: no-repeat; 
+    color: #000;
 }
 
 .container-galeria_logo {
@@ -194,7 +196,9 @@ body {
 }
 
 .container-galeria_txt {
+    margin-top:7%;
     margin-left: 10%;
+    color: black;
 }
 
 
