@@ -207,8 +207,23 @@ body {
 .container-galeria_txt {
     margin-top: 7%;
     margin-left: 10%;
+}
+
+.container-galeria_txt h1 {
+    color: black;
+    font-weight: 600;
+}
+
+.container-galeria_txt h2,.container-galeria_txt h3{
+    font-weight: 500;
     color: black;
 }
+
+@media only screen and (max-width: 1000px) {
+    .cuadrosPequeños {
+      display: none;
+    }
+  }
 
 /* Videos */
 
@@ -286,3 +301,4 @@ body {
         height: 40rem;
     }
 }
+
